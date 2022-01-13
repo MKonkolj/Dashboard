@@ -16,12 +16,18 @@ body {
     background: url(../img/login-background.jpg) no-repeat center fixed;
 }
 
+main {
+    height: 100%;
+    display: grid;
+    place-items: center center;
+}
+
 .container {
     background: rgba(255, 255, 255, .8);
     border-radius: 30px;
     width: min(90%, 650px);
-    padding: 40px min(5%, 100px) 140px;
-    margin-inline: auto;
+    padding: 40px min(10vw, 100px) 40px;
+    height: min(90vh, 650px);
 }
 
 .logo {
