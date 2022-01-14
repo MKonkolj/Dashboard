@@ -56,6 +56,7 @@ main {
 
 .sidebar li:hover{
     border-left: 5px solid var(--white);
+    padding-left: 55px;
 }
 
 /* main */
@@ -64,4 +65,55 @@ main {
     margin: 30px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    border-top: 2px solid #C5C5C5;
+    overflow: scroll;
+}
+
+.table-div {
+    overflow: scroll;
+    height: 90vh;
+}
+
+.table-cell {
+    padding: 40px 30px 40px 30px;
+    border: 1px solid #C5C5C5;
+}
+
+.avatar-column {
+    padding: 0 30px 0 30px;
+}
+
+.avatar-column img {
+    
+}
+
+td.options-column {
+    display: flex;
+}
+
+.options-icon {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
+.edit-option {
+    background-image: url(../icons/edit-icon.png);
+}
+
+.view-option {
+    background-image: url(../icons/view-icon.png);
+}
+
+.delete-option {
+    background-image: url(../icons/delete-icon.png);
 }
