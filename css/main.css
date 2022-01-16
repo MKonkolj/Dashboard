@@ -1,25 +1,3 @@
-.table-div::-webkit-scrollbar {
-    width: 6px;
-    height: 5px;
-}
-
-.table-div::-webkit-scrollbar-track {
-    background: transparent;
-    margin-block: 10px;
-}
-  
-.table-div::-webkit-scrollbar-thumb {
-    background: var(--blue-grad);
-    border-radius: 100vw;
-}
-
-@supports (scrollbar-color: red blue) {
-    .table-div {
-        scrollbar-color: var(--light-blue) transparent;
-        scrollbar-width: thin;
-    }
-}
-
 * {
     box-sizing: border-box;
     margin: 0;

@@ -1,0 +1,21 @@
+::-webkit-scrollbar {
+    width: 6px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    margin-block: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: var(--blue-grad);
+    border-radius: 100vw;
+}
+
+@supports (scrollbar-color: red blue) {
+    * {
+        scrollbar-color: var(--light-blue) transparent;
+        scrollbar-width: thin;
+    }
+}
