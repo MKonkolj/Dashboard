@@ -1,5 +1,7 @@
 :root {
     --blue-grad: linear-gradient(180deg, #3372ED 0%, #1138C2 100%);
     --blue: #1138C2;
+    --light-blue: #3372ED;
+    --light-grey: #C5C5C5; /* table borders */
     --white: #fff;
 }
