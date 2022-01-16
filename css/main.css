@@ -182,3 +182,33 @@ li a {
     padding: 10px 30px 10px 60px;
     width: 190px;
 }
+
+.options-container {
+    border: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.options-icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.options-icon:hover {
+    filter: invert(37%) sepia(100%) saturate(2345%) hue-rotate(208deg) brightness(95%) contrast(96%);
+}
+
+.edit-option {
+    background-image: url(../icons/edit-icon.png);
+}
+
+.view-option {
+    background-image: url(../icons/view-icon.png);
+}
+
+.delete-option {
+    background-image: url(../icons/delete-icon.png);
+}
