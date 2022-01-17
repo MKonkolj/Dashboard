@@ -218,23 +218,24 @@ a {
 }
 
 .delete-modal {
-    width: 600px;
-    height: 200px;
+    width: min(90%, 600px);
+    min-height: 200px;
     background: var(--white);
     text-align: center;
-    padding-block: 25px;
+    padding: 30px 30px;
+}
+
+.flex-2-1 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .deleted-user {
     font-size: 2rem;
     font-weight: 700;
-    line-height: 2;
-    margin-bottom: 30px;
-}
-
-.deleted-yes,
-.deleted-no {
-    margin-inline: 30px;
+    margin-block: 10px 20px;
 }
 
 .btn-white {
