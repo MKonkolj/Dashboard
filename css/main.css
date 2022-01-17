@@ -15,7 +15,8 @@ body {
 }
 
 ul li,
-li a {
+li a,
+a {
     text-decoration: none;
     list-style: none;
 }
@@ -33,7 +34,7 @@ li a {
     height: 100%;
     background: var(--blue-grad);
     border-radius: 0 0 20px 0;
-    box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .sidebar img {
@@ -118,7 +119,7 @@ li a {
     transform: translateY(-50%);
 }
 
-.add-user-btn {
+.btn-primary {
     background: var(--blue-grad);
     color: var(--white);
     border-radius: 4px;
@@ -126,15 +127,18 @@ li a {
     border: none;
     padding: 10px 60px;
     font-weight: 600;
-    margin: 30px 60px 30px 10px;
     cursor: pointer;
 }
 
-.add-user-btn:hover {
+.add-user-btn {
+    margin: 30px 60px 30px 10px;
+}
+
+.btn-primary:hover {
     background: var(--blue);
 }
 
-.add-user-btn:active {
+.btn-primary:active {
     background: var(--light-blue);
 }
 
@@ -191,4 +195,54 @@ li a {
 
 .delete-option {
     background-image: url(../icons/delete-icon.png);
+}
+
+/* DELETE MODAL */
+
+.fixed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.black-alpha {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.delete-modal {
+    width: 600px;
+    height: 200px;
+    background: var(--white);
+    text-align: center;
+    padding-block: 25px;
+}
+
+.deleted-user {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.deleted-yes,
+.deleted-no {
+    margin-inline: 30px;
+}
+
+.btn-white {
+    background: var(--white);
+    border: 2px solid var(--blue);
+    color: var(--blue);
+}
+
+.deleted-no:hover {
+    color: var(--white);
 }

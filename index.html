@@ -46,7 +46,7 @@
                     <!-- SEARCHBAR -->
                     <div class="top-section">
                         <input class="searchbar" type="text" placeholder="Search">
-                        <input class="add-user-btn" type="submit" value="Add user">
+                        <input class="add-user-btn btn-primary" type="submit" value="Add user">
                     </div>
                     <!-- TABLE -->
                     <div class="table-div">
@@ -75,9 +75,9 @@
                                     <td class="table-cell options-column">
                                         <div class="options-container">
                                             <!-- options-container je dodat da bi borderi u tabeli bili okej -->
-                                            <span class="edit-option options-icon"></span>
-                                            <span class="view-option options-icon"></span>
-                                            <span class="delete-option options-icon"></span>
+                                            <a href=""><span class="edit-option options-icon"></span></a>
+                                            <a href="profile.html"><span class="view-option options-icon"></span></a>
+                                            <span class="delete-option options-icon" id="deleteBtn"></span>
                                         </div>
                                     </td>
                                 </tr>
@@ -248,5 +248,14 @@
             </div>
         </div>
     </main>
+    <div class="black-alpha fixed" id="deleteModal">
+        <div class="delete-modal fixed">
+            <p>Are you sure you want to delete</p>
+            <p class="deleted-user">Lorem Ipsum</p>
+            <a class="deleted-yes btn-primary" href="#">Yes</a>
+            <a class="deleted-no btn-primary btn-white" href="#">No</a>
+        </div>
+    </div>
+<script src="./script/script.js"></script>
 </body>
 </html>
