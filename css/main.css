@@ -213,7 +213,7 @@ a {
     display: none;
 }
 
-.show {
+#deleteModal.show {
     display: block;
 }
 
@@ -245,4 +245,77 @@ a {
 
 .deleted-no:hover {
     color: var(--white);
+}
+
+/* ADD USER MODAL */
+
+.add-user-modal {
+    width: 480px;
+    height: 100vh;
+    border-radius: 20px 0px 0px 20px;
+    background: var(--white);
+    padding-inline: 60px;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    right: 0;
+    overflow: auto;
+    box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    transform: translateX(480px);
+    transition: transform 300ms ease-in;
+}
+
+#addUserModal.show {
+    display: block;
+}
+
+#addUserModal.show .add-user-modal {
+    transform: translateX(0);
+}
+
+.add-user-modal form {
+    display: grid;
+    gap: 20px;
+    width: 100%;   
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 1.875rem;
+}
+
+.add-user-image {
+    display: block;
+    margin-inline: auto; 
+    border: 1px solid var(--light-grey);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.modal-right-input {
+    padding: 5px 20px;
+    border: 1px solid var(--light-grey);
+    border-radius: 4px;
+}
+
+.modal-right-input::placeholder {
+    font-size: 0.875rem;
+}
+
+.add-user-modal-btns {
+    margin-top: 50px;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn-clear {
+    color: var(--dark-grey);
+    font-weight: 600;
 }

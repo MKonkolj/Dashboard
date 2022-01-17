@@ -75,7 +75,7 @@
                                     <td class="table-cell options-column">
                                         <div class="options-container">
                                             <!-- options-container je dodat da bi borderi u tabeli bili okej -->
-                                            <a href=""><span class="edit-option options-icon"></span></a>
+                                            <span class="edit-option options-icon"></span>
                                             <a href="profile.html"><span class="view-option options-icon"></span></a>
                                             <span class="delete-option options-icon" id="deleteBtn"></span>
                                         </div>
@@ -248,12 +248,37 @@
             </div>
         </div>
     </main>
+    <!-- DELETE MODAL -->
     <div class="black-alpha fixed" id="deleteModal">
         <div class="delete-modal fixed">
             <p>Are you sure you want to delete</p>
             <p class="deleted-user">Lorem Ipsum</p>
             <a class="deleted-yes btn-primary" href="#">Yes</a>
             <a class="deleted-no btn-primary btn-white" href="#">No</a>
+        </div>
+    </div>
+    <!-- ADD USER MODAL -->
+    <div class="black-alpha fixed" id="addUserModal">
+        <div class="add-user-modal">
+            <form>
+                <p class="modal-title">New User</p>
+                <img class="add-user-image" src="" alt="Add image">
+                <input class="modal-right-input" type="text" placeholder="Name:">
+                <input class="modal-right-input" type="text" placeholder="Last name:">
+                <input class="modal-right-input" type="text" placeholder="Email:">
+                <input class="modal-right-input" type="text" placeholder="Phone:">
+                <input class="modal-right-input" type="text" placeholder="Street:">
+                <input class="modal-right-input" type="text" placeholder="City:">
+                <input class="modal-right-input" type="text" placeholder="PTT:">
+                <input class="modal-right-input" type="text" placeholder="Country:">
+                <input class="modal-right-input" type="text" placeholder="Password:">
+                <input class="modal-right-input" type="text" placeholder="Role:">
+                <input class="modal-right-input" type="text" placeholder="Bank account:">
+                <div class="add-user-modal-btns">
+                    <a class="btn-clear" href="#" id="addUserCancel">Cancel</a>
+                    <a class="btn-primary" href="#" id="addUserAdd">Add user</a>
+                </div>
+            </form>
         </div>
     </div>
 <script src="./script/script.js"></script>
