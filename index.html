@@ -46,7 +46,7 @@
                     <!-- SEARCHBAR -->
                     <div class="top-section">
                         <input class="searchbar" type="text" placeholder="Search">
-                        <input class="add-user-btn btn-primary" type="submit" value="Add user">
+                        <input class="add-user-btn btn-primary" type="submit" value="Add user" id="addUserBtn">
                     </div>
                     <!-- TABLE -->
                     <div class="table-div">
@@ -75,7 +75,7 @@
                                     <td class="table-cell options-column">
                                         <div class="options-container">
                                             <!-- options-container je dodat da bi borderi u tabeli bili okej -->
-                                            <span class="edit-option options-icon"></span>
+                                            <span class="edit-option options-icon" id="editBtn"></span>
                                             <a href="profile.html"><span class="view-option options-icon"></span></a>
                                             <span class="delete-option options-icon" id="deleteBtn"></span>
                                         </div>
@@ -249,39 +249,58 @@
         </div>
     </main>
     <!-- DELETE MODAL -->
-    <div class="black-alpha fixed" id="deleteModal">
-        <div class="delete-modal fixed">
-            <p>Are you sure you want to delete</p>
-            <p class="deleted-user">Lorem Ipsum</p>
-            <div class="flex-2-1">
-                <a class="deleted-yes btn-primary" href="#">Yes</a>
-                <a class="deleted-no btn-primary btn-white" href="#">No</a>
-            </div>
+    <div class="black-alpha" id="blackAlpha"></div>
+    <div class="delete-modal" id="deleteModal">
+        <p>Are you sure you want to delete</p>
+        <p class="deleted-user">Lorem Ipsum</p>
+        <div class="flex-2-1">
+            <a class="deleted-yes btn-primary" id="deleteYes">Yes</a>
+            <a class="deleted-no btn-primary btn-white" id="deleteNo">No</a>
         </div>
     </div>
     <!-- ADD USER MODAL -->
-    <div class="black-alpha fixed" id="addUserModal">
-        <div class="add-user-modal">
-            <form>
-                <p class="modal-title">New User</p>
-                <img class="add-user-image" src="" alt="Add image">
-                <input class="modal-right-input" type="text" placeholder="Name:">
-                <input class="modal-right-input" type="text" placeholder="Last name:">
-                <input class="modal-right-input" type="text" placeholder="Email:">
-                <input class="modal-right-input" type="text" placeholder="Phone:">
-                <input class="modal-right-input" type="text" placeholder="Street:">
-                <input class="modal-right-input" type="text" placeholder="City:">
-                <input class="modal-right-input" type="text" placeholder="PTT:">
-                <input class="modal-right-input" type="text" placeholder="Country:">
-                <input class="modal-right-input" type="text" placeholder="Password:">
-                <input class="modal-right-input" type="text" placeholder="Role:">
-                <input class="modal-right-input" type="text" placeholder="Bank account:">
-                <div class="add-user-modal-btns">
-                    <a class="btn-clear" href="#" id="addUserCancel">Cancel</a>
-                    <a class="btn-primary" href="#" id="addUserAdd">Add user</a>
-                </div>
-            </form>
-        </div>
+    <div class="add-user-modal" id="addUserModal">
+        <form>
+            <p class="modal-title">New User</p>
+            <img class="add-user-image" src="" alt="Add image">
+            <input class="modal-right-input" type="text" placeholder="Name:">
+            <input class="modal-right-input" type="text" placeholder="Last name:">
+            <input class="modal-right-input" type="text" placeholder="Email:">
+            <input class="modal-right-input" type="text" placeholder="Phone:">
+            <input class="modal-right-input" type="text" placeholder="Street:">
+            <input class="modal-right-input" type="text" placeholder="City:">
+            <input class="modal-right-input" type="text" placeholder="PTT:">
+            <input class="modal-right-input" type="text" placeholder="Country:">
+            <input class="modal-right-input" type="text" placeholder="Password:">
+            <input class="modal-right-input" type="text" placeholder="Role:">
+            <input class="modal-right-input" type="text" placeholder="Bank account:">
+            <div class="add-user-modal-btns">
+                <a class="btn-clear" href="#" id="addUserCancel">Cancel</a>
+                <a class="btn-primary" href="#" id="addUserAdd">Add user</a>
+            </div>
+        </form>
+    </div>
+    <!-- EDIT USER MODAL -->
+    <div class="edit-user-modal" id="editUserModal">
+        <form>
+            <p class="modal-title">New User</p>
+            <img class="edit-user-image" src="./img/avatars/avatar-1.png" alt="User image">
+            <input class="modal-right-input" type="text" value="Loreta">
+            <input class="modal-right-input" type="text" value="Ipsum">
+            <input class="modal-right-input" type="text" value="lremipsum@gmail.com">
+            <input class="modal-right-input" type="text" value="+38160123456">
+            <input class="modal-right-input" type="text" value="Matije Korvina 17">
+            <input class="modal-right-input" type="text" value="Subotica">
+            <input class="modal-right-input" type="text" value="24000">
+            <input class="modal-right-input" type="text" value="Vojvodina">
+            <input class="modal-right-input" type="text" value="***********">
+            <input class="modal-right-input" type="text" value="Designer">
+            <input class="modal-right-input" type="text" value="**** **** **** 5678">
+            <div class="edit-user-modal-btns">
+                <a class="btn-clear" href="#" id="editUserCancel">Cancel</a>
+                <a class="btn-primary" href="#" id="editUserSave">Save changes</a>
+            </div>
+        </form>
     </div>
 <script src="./script/script.js"></script>
 </body>
