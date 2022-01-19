@@ -174,10 +174,14 @@ a {
     margin: 0 auto;
 }
 
+.options-column {
+    width: 178px;
+}
+
 .options-container {
     border: none;
     display: flex;
-    justify-content: space-around;
+    gap: 23px;
 }
 
 .options-icon {

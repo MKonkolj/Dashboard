@@ -1,51 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,user-scalable=0">
-        <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="../Dashboard/img/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="../img/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-        <link rel="stylesheet" href="./css/fonts.css">
-        <link rel="stylesheet" href="./css/colors.css">
-        <link rel="stylesheet" href="./css/scrollbar.css">
-        <link rel="stylesheet" href="./css/main.css">
-        <title>Dashboard</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,user-scalable=0">
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../Dashboard/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Dashboard</title>
+</head>
 <body>
-    <div class="container">
-        <!-- SIDEBAR -->
-        <div class="sidebar">
-            <img src="img/universal-logo.png" alt="universal logo">
-            <ul class="sidebar-menu">
-                <li><a href="./index.html">Users</a></li>
-                <li><a href="./developers.html">Developers</a></li>
-                <li><a href="./clients.html">Clients</a></li>
-                <li><a href="./my-profile.html">My profile</a></li>
-            </ul>
-        </div>
-        <div class="dashboard-container">
-            <div class="dashboard">
-                <h1>This is supposed to be the developers page</h1>
-                <img src="https://media0.giphy.com/media/jkZtSdwKOx05BOlapR/giphy.gif?cid=ecf05e47xddjfixq309uh8skk35elpj63q4f2vhtuu6kb4nt&rid=giphy.gif&ct=g" alt="">
-                <a href="index.html">&#11176 Back</a>
+    <main>
+        <!-- CONTAINER ZA SIDEBAR I MAIN -->
+        <div class="container">
+            <!-- SIDEBAR -->
+            <div class="sidebar">
+                <img src="img/universal-logo.png" alt="universal logo">
+                <ul class="sidebar-menu">
+                    <li><a href="./index.html">Users</a></li>
+                    <li><a href="./developers.html">Developers</a></li>
+                    <li><a href="./clients.html">Clients</a></li>
+                    <li><a href="./my-profile.html">My profile</a></li>
+                </ul>
+            </div>
+            <!-- DASHBOARD -->
+            <div class="dashboard-container">
+                <div class="dashboard">
+                    <!-- SEARCHBAR -->
+                    <div class="top-section">
+                        <input class="searchbar" type="text" placeholder="Search">
+                        <input class="add-user-btn btn-primary" type="submit" value="Add user" id="addUserBtn">
+                    </div>
+                    <!-- TABLE -->
+                    <div class="table-div">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="table-cell avatar-column">Avatar</th>
+                                    <th class="table-cell name-column">First name</th>
+                                    <th class="table-cell surname-column">Last name</th>
+                                    <th class="table-cell options-column">Options</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="table-cell avatar-column"><img src="./img/avatars/avatar-1.png" alt="user avatar"></td>
+                                    <td class="table-cell name-column">Loreta</td>
+                                    <td class="table-cell surname-column">Ipsum</td>
+                                    <td class="table-cell options-column">
+                                        <div class="options-container">
+                                            <!-- options-container je dodat da bi borderi u tabeli bili okej -->
+                                            <span class="edit-option options-icon" id="editBtn"></span>
+                                            <a><span class="view-option options-icon"></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-cell avatar-column"><img src="./img/avatars/avatar-2.png" alt="user avatar"></td>
+                                    <td class="table-cell name-column">Lorem</td>
+                                    <td class="table-cell surname-column">Ipsum</td>
+                                    <td class="table-cell options-column">
+                                        <div class="options-container">
+                                            <span class="edit-option options-icon"></span>
+                                            <a><span class="view-option options-icon"></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-cell avatar-column"><img src="./img/avatars/avatar-3.png" alt="user avatar"></td>
+                                    <td class="table-cell name-column">Lorem</td>
+                                    <td class="table-cell surname-column">Ipsum</td>
+                                    <td class="table-cell options-column">
+                                        <div class="options-container">
+                                            <span class="edit-option options-icon"></span>
+                                            <a><span class="view-option options-icon"></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-cell avatar-column"><img src="./img/avatars/avatar-4.png" alt="user avatar"></td>
+                                    <td class="table-cell name-column">Lorem</td>
+                                    <td class="table-cell surname-column">Ipsum</td>
+                                    <td class="table-cell options-column">
+                                        <div class="options-container">
+                                            <span class="edit-option options-icon"></span>
+                                            <a><span class="view-option options-icon"></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-cell avatar-column"><img src="./img/avatars/avatar-5.png" alt="user avatar"></td>
+                                    <td class="table-cell name-column">Lorem</td>
+                                    <td class="table-cell surname-column">Ipsum</td>
+                                    <td class="table-cell options-column">
+                                        <div class="options-container">
+                                            <span class="edit-option options-icon"></span>
+                                            <a><span class="view-option options-icon"></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-cell avatar-column"><img src="./img/avatars/avatar-6.png" alt="user avatar"></td>
+                                    <td class="table-cell name-column">Lorem</td>
+                                    <td class="table-cell surname-column">Ipsum</td>
+                                    <td class="table-cell options-column">
+                                        <div class="options-container">
+                                            <span class="edit-option options-icon"></span>
+                                            <a><span class="view-option options-icon"></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-cell avatar-column"><img src="./img/avatars/avatar-7.png" alt="user avatar"></td>
+                                    <td class="table-cell name-column">Lorem</td>
+                                    <td class="table-cell surname-column">Ipsum</td>
+                                    <td class="table-cell options-column">
+                                        <div class="options-container">
+                                            <span class="edit-option options-icon"></span>
+                                            <a><span class="view-option options-icon"></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-cell avatar-column"><img src="./img/avatars/avatar-1.png" alt="user avatar"></td>
+                                    <td class="table-cell name-column">Loreta</td>
+                                    <td class="table-cell surname-column">Ipsum</td>
+                                    <td class="table-cell options-column">
+                                        <div class="options-container">
+                                            <span class="edit-option options-icon"></span>
+                                            <a><span class="view-option options-icon"></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-cell avatar-column"><img src="./img/avatars/avatar-1.png" alt="user avatar"></td>
+                                    <td class="table-cell name-column">Loreta</td>
+                                    <td class="table-cell surname-column">Ipsum</td>
+                                    <td class="table-cell options-column">
+                                        <div class="options-container">
+                                            <span class="edit-option options-icon"></span>
+                                            <a><span class="view-option options-icon"></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-cell avatar-column"><img src="./img/avatars/avatar-1.png" alt="user avatar"></td>
+                                    <td class="table-cell name-column">Loreta</td>
+                                    <td class="table-cell surname-column">Ipsum</td>
+                                    <td class="table-cell options-column">
+                                        <div class="options-container">
+                                            <span class="edit-option options-icon"></span>
+                                            <a><span class="view-option options-icon"></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-cell avatar-column"><img src="./img/avatars/avatar-1.png" alt="user avatar"></td>
+                                    <td class="table-cell name-column">Loreta</td>
+                                    <td class="table-cell surname-column">Ipsum</td>
+                                    <td class="table-cell options-column">
+                                        <div class="options-container">
+                                            <span class="edit-option options-icon"></span>
+                                            <a><span class="view-option options-icon"></span></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
+    </main>
+    <!-- DELETE MODAL -->
+    <div class="black-alpha" id="blackAlpha"></div>
+    <div class="delete-modal" id="deleteModal">
+        <p>Are you sure you want to delete</p>
+        <p class="deleted-user">Lorem Ipsum</p>
+        <div class="flex-2-1">
+            <a class="deleted-yes btn-primary" id="deleteYes">Yes</a>
+            <a class="deleted-no btn-primary btn-white" id="deleteNo">No</a>
+        </div>
     </div>
+    <!-- ADD USER MODAL -->
+    <div class="add-user-modal" id="addUserModal">
+        <form>
+            <p class="modal-title">New User</p>
+            <img class="add-user-image" src="" alt="Add image">
+            <input class="modal-right-input" type="text" placeholder="Name:">
+            <input class="modal-right-input" type="text" placeholder="Last name:">
+            <input class="modal-right-input" type="text" placeholder="Email:">
+            <input class="modal-right-input" type="text" placeholder="Phone:">
+            <input class="modal-right-input" type="text" placeholder="Street:">
+            <input class="modal-right-input" type="text" placeholder="City:">
+            <input class="modal-right-input" type="text" placeholder="PTT:">
+            <input class="modal-right-input" type="text" placeholder="Country:">
+            <input class="modal-right-input" type="text" placeholder="Password:">
+            <input class="modal-right-input" type="text" placeholder="Role:">
+            <input class="modal-right-input" type="text" placeholder="Bank account:">
+            <div class="add-user-modal-btns">
+                <a class="btn-clear" href="#" id="addUserCancel">Cancel</a>
+                <a class="btn-primary" href="#" id="addUserAdd">Add user</a>
+            </div>
+        </form>
+    </div>
+    <!-- EDIT USER MODAL -->
+    <div class="edit-user-modal" id="editUserModal">
+        <form>
+            <p class="modal-title">New User</p>
+            <img class="edit-user-image" src="./img/avatars/avatar-1.png" alt="User image">
+            <input class="modal-right-input" type="text" value="Loreta">
+            <input class="modal-right-input" type="text" value="Ipsum">
+            <input class="modal-right-input" type="text" value="lremipsum@gmail.com">
+            <input class="modal-right-input" type="text" value="+38160123456">
+            <input class="modal-right-input" type="text" value="Matije Korvina 17">
+            <input class="modal-right-input" type="text" value="Subotica">
+            <input class="modal-right-input" type="text" value="24000">
+            <input class="modal-right-input" type="text" value="Vojvodina">
+            <input class="modal-right-input" type="text" value="***********">
+            <input class="modal-right-input" type="text" value="Designer">
+            <input class="modal-right-input" type="text" value="**** **** **** 5678">
+            <div class="edit-user-modal-btns">
+                <a class="btn-clear" href="#" id="editUserCancel">Cancel</a>
+                <a class="btn-primary" href="#" id="editUserSave">Save changes</a>
+            </div>
+        </form>
+    </div>
+<script src="./script/script.js"></script>
 </body>
 </html>
