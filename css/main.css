@@ -167,6 +167,11 @@ a {
     width: 190px;
 }
 
+.avatar-column img {
+    display: block;
+    margin: 0 auto;
+}
+
 .options-container {
     border: none;
     display: flex;
@@ -263,7 +268,7 @@ a {
     height: 100vh;
     border-radius: 20px 0px 0px 20px;
     background: var(--white);
-    padding-inline: 60px;
+    padding: 20px 60px;
     display: grid;
     place-items: center;
     position: fixed;
