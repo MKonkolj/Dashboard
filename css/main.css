@@ -35,6 +35,7 @@ a {
     background: var(--blue-grad);
     border-radius: 0 0 20px 0;
     box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    display: block;
 }
 
 .sidebar img {
@@ -164,7 +165,7 @@ a {
 
 .avatar-column {
     padding: 10px 30px 10px 30px;
-    width: 190px;
+    width: 145px;
     text-align: center;
 }
 
@@ -339,4 +340,3 @@ a {
     color: var(--dark-grey);
     font-weight: 600;
 }
-

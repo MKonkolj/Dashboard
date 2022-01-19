@@ -74,3 +74,9 @@ blackAlpha.addEventListener("click", () => {
 });
 
 ////////////////////////////////////////////////////
+// VIEW PROFILE FOR EACH
+const viewBtns = document.querySelectorAll(".options-container a");
+
+viewBtns.forEach(element => {
+    element.href = "user-profile.html";
+});
