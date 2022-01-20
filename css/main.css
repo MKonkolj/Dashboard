@@ -173,7 +173,7 @@ a {
 .table-cell {
     padding: clamp(0.9375rem, 0.35539215686274506rem + 2.450980392156863vw, 1.875rem);
     border: 1px solid var(--light-grey);
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .avatar-column {
@@ -400,6 +400,9 @@ a {
         width: 100vw;
         padding: clamp(1.25rem, 0.42247386759581884rem + 3.484320557491289vw, 1.875rem);
     }
+    .dashboard {
+        height: calc(100vh - 130px);
+    }
     .btn-primary,
     .add-user-btn {
         padding-inline: clamp(2rem, 0.9133986928104574rem + 4.575163398692811vw, 3.75rem);
@@ -410,8 +413,5 @@ a {
     }
     .top-section::before {
         left: clamp(1.25rem, -1.09375rem + 7.8125vw, 3.75rem);
-    }
-    .searchbar:focus ~ .add-user-btn {
-        display: none;
     }
 }
