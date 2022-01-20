@@ -80,3 +80,11 @@ const viewBtns = document.querySelectorAll(".options-container a");
 viewBtns.forEach(element => {
     element.href = "user-profile.html";
 });
+
+
+/////////////////////////////////////////////////////
+// SIDEBAR TOGGLE
+
+document.querySelector("#burger").addEventListener("click", () => {
+    document.querySelector("#sidebarMenu").classList.toggle("show");
+})
