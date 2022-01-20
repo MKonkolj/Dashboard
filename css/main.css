@@ -75,7 +75,7 @@ a {
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: left;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 130px);
 }
 
 /* SEARCH BAR */
@@ -365,5 +365,15 @@ a {
     .dashboard-container {
         width: 100vw;
         padding: 30px;
+    }
+    .add-user-btn.btn-primary {
+        padding-inline: clamp(0.9375rem, -1.69921875rem + 8.7890625vw, 3.75rem);
+        margin-right: clamp(1.25rem, -1.09375rem + 7.8125vw, 3.75rem);
+    }
+    .searchbar {
+        padding-left: calc(clamp(1.25rem, -1.09375rem + 7.8125vw, 3.75rem) + 30px);
+    }
+    .top-section::before {
+        left: clamp(1.25rem, -1.09375rem + 7.8125vw, 3.75rem);
     }
 }
