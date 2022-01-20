@@ -8,6 +8,7 @@ body, input {
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 1rem;
+    font-size: clamp(0.8125rem, 0.5642421602787456rem + 1.0452961672473868vw, 1rem);
 }
 
 body {
@@ -355,7 +356,7 @@ a {
         align-items: center;
     }
     .sidebar img {
-        margin-block: 0;
+        margin: 0 0 0 -20px;
     }
     .sidebar-menu {
         display: none;
@@ -364,7 +365,7 @@ a {
     }
     .dashboard-container {
         width: 100vw;
-        padding: 30px;
+        padding: clamp(1.25rem, 0.42247386759581884rem + 3.484320557491289vw, 1.875rem);
     }
     .add-user-btn.btn-primary {
         padding-inline: clamp(0.9375rem, -1.69921875rem + 8.7890625vw, 3.75rem);
