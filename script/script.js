@@ -1,9 +1,24 @@
+const blackAlpha = document.querySelector("#blackAlpha");
 /////////////////////////////////////////////////////
 // DELETE MODAL
 const deleteBtns = document.querySelectorAll(".delete-option");
 const deleteModal = document.querySelector("#deleteModal");
 const deleteYes = document.querySelector("#deleteYes");
 const deleteNo = document.querySelector("#deleteNo");
+// INVOICE MODAL
+const invoiceBtns = document.querySelectorAll(".invoice-option");
+const invoiceModal = document.querySelector("#invoiceModal");
+const closeBtn = document.querySelector("#closeBtn");
+// ADD USER MODAL
+const addUserBtn = document.querySelector("#addUserBtn");
+const addUserModal = document.querySelector("#addUserModal");
+const addUserCancel = document.querySelector("#addUserCancel");
+const addUserAdd = document.querySelector("#addUserAdd");
+//EDIT USER
+const editBtns = document.querySelectorAll(".edit-option");
+const editUserCancel = document.querySelector("#editUserCancel");
+const editUserSave = document.querySelector("#editUserSave");
+const editUserModal = document.querySelector("#editUserModal");
 
 // EVENTS FOR DELETE MODAL
 deleteBtns.forEach(element => {
@@ -22,11 +37,6 @@ function toggleDeleteModal() {
 
 
 //////////////////////////////////////////////////////
-// ADD USER MODAL
-const addUserBtn = document.querySelector("#addUserBtn");
-const addUserModal = document.querySelector("#addUserModal");
-const addUserCancel = document.querySelector("#addUserCancel");
-const addUserAdd = document.querySelector("#addUserAdd");
 
 // EVENTS FOR ADD USER MODAL
 addUserBtn.addEventListener("click", toggleNewUserModal);
@@ -40,11 +50,6 @@ function toggleNewUserModal() {
 };
 
 //////////////////////////////////////////////////////
-//EDIT USER
-const editBtns = document.querySelectorAll(".edit-option");
-const editUserCancel = document.querySelector("#editUserCancel");
-const editUserSave = document.querySelector("#editUserSave");
-const editUserModal = document.querySelector("#editUserModal");
 
 // EVENTS FOR EDIT USER MODAL
 editBtns.forEach(element => {
@@ -62,17 +67,12 @@ function toggleEditUserModal() {
 };
 
 //////////////////////////////////////////////////////
-// INVOICE MODAL
-const invoiceBtns = document.querySelectorAll(".invoice-option");
-const invoiceModal = document.querySelector("#invoiceModal");
-const closeBtn = document.querySelector("#closeBtn");
 
-// // EVENTS FOR ADD USER MODAL
+// // EVENTS FOR INVOICE MODAL
 invoiceBtns.forEach(element => {
     element.addEventListener("click", toggleInvoiceModal)
 });
 
-invoiceBtn.addEventListener("click", toggleInvoiceModal);
 closeBtn.addEventListener("click", toggleInvoiceModal);
 
 //FUNCTION
@@ -83,8 +83,6 @@ function toggleInvoiceModal() {
 
 ///////////////////////////////////////////////////////
 //BLACK ALPHA TO CLOSE MODAL
-const blackAlpha = document.querySelector("#blackAlpha");
-
 blackAlpha.addEventListener("click", () => {
     deleteModal.classList.remove("show");
     addUserModal.classList.remove("show");

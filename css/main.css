@@ -369,6 +369,10 @@ a {
     font-weight: 600;
 }
 
+.edit-user-modal-btns .btn-primary {
+    padding-inline: 33px;
+}
+
 /* INVOICE MODAL */
 
 .invoice-user-modal {
