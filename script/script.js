@@ -5,12 +5,11 @@ const deleteModal = document.querySelector("#deleteModal");
 const deleteYes = document.querySelector("#deleteYes");
 const deleteNo = document.querySelector("#deleteNo");
 
-// ADD EVENT LISTENER TO EACH BTN
+// EVENTS FOR DELETE MODAL
 deleteBtns.forEach(element => {
     element.addEventListener("click", toggleDeleteModal);
 });
 
-// EVENTS FOR DELETE MODAL
 deleteBtn.addEventListener("click", toggleDeleteModal);
 deleteYes.addEventListener("click", toggleDeleteModal);
 deleteNo.addEventListener("click", toggleDeleteModal);
@@ -47,11 +46,11 @@ const editUserCancel = document.querySelector("#editUserCancel");
 const editUserSave = document.querySelector("#editUserSave");
 const editUserModal = document.querySelector("#editUserModal");
 
+// EVENTS FOR EDIT USER MODAL
 editBtns.forEach(element => {
     element.addEventListener("click", toggleEditUserModal);
 });
 
-// EVENTS FOR EDIT USER MODAL
 editBtn.addEventListener("click", toggleEditUserModal);
 editUserCancel.addEventListener("click", toggleEditUserModal);
 editUserSave.addEventListener("click", toggleEditUserModal);
@@ -62,14 +61,35 @@ function toggleEditUserModal() {
     blackAlpha.classList.toggle("show");
 };
 
+//////////////////////////////////////////////////////
+// INVOICE MODAL
+const invoiceBtns = document.querySelectorAll(".invoice-option");
+const invoiceModal = document.querySelector("#invoiceModal");
+const closeBtn = document.querySelector("#closeBtn");
+
+// // EVENTS FOR ADD USER MODAL
+invoiceBtns.forEach(element => {
+    element.addEventListener("click", toggleInvoiceModal)
+});
+
+invoiceBtn.addEventListener("click", toggleInvoiceModal);
+closeBtn.addEventListener("click", toggleInvoiceModal);
+
+//FUNCTION
+function toggleInvoiceModal() {
+    invoiceModal.classList.toggle("show");
+    blackAlpha.classList.toggle("show");
+};
+
 ///////////////////////////////////////////////////////
-//BLACK ALPHA CLOSE MODAL
+//BLACK ALPHA TO CLOSE MODAL
 const blackAlpha = document.querySelector("#blackAlpha");
 
 blackAlpha.addEventListener("click", () => {
     deleteModal.classList.remove("show");
     addUserModal.classList.remove("show");
     editUserModal.classList.remove("show");
+    invoiceModal.classList.remove("show");
     blackAlpha.classList.remove("show");
 });
 

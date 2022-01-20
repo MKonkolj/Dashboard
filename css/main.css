@@ -217,6 +217,18 @@ a {
     background-image: url(../icons/delete-icon.png);
 }
 
+.time-option {
+    background-image: url(../icons/time-icon.png);
+}
+
+.view-dark-option {
+    background-image: url(../icons/view-dark-icon.png);
+}
+
+.invoice-option {
+    background-image: url(../icons/invoice-icon.png);
+}
+
 /* BLACK ALPHA */
 
 .black-alpha {
@@ -356,6 +368,66 @@ a {
     color: var(--dark-grey);
     font-weight: 600;
 }
+
+/* INVOICE MODAL */
+
+.invoice-user-modal {
+    display: none;
+    width: min(90%, 800px);
+    background: var(--white);
+    text-align: center;
+    padding: 30px 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.invoice-user-modal.show {
+    display: block;
+}
+
+.invoice-title {
+    border-bottom: 2px solid var(--light-grey);
+    position: relative;
+}
+
+.modal-subtitle {
+    font-weight: 700;
+    font-size: 1rem;
+    font-size: clamp(0.8125rem, 0.5642421602787456rem + 1.0452961672473868vw, 1rem);
+    margin-bottom: 20px;
+}
+
+.invoice-container p {
+    margin-top: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.close-btn div {
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    border-radius: 1px;
+}
+
+.close-bar1 {
+    transform: rotate(-45deg) translate(-6px, 3px);
+}
+.close-bar2 {
+    transform: rotate(45deg) translate(2px, 5px);
+}
+
+/* MEDIA  ****************************/
 
 @media (max-width: 992px) {
     .container {
