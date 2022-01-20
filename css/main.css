@@ -404,8 +404,9 @@ a {
     margin-bottom: 20px;
 }
 
-.invoice-container p {
-    margin-top: 20px;
+.invoice-container > p {
+    margin: 20px 0 0 45px;
+    text-align: left;
 }
 
 .close-btn {

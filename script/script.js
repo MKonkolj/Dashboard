@@ -73,7 +73,7 @@ invoiceBtns.forEach(element => {
     element.addEventListener("click", toggleInvoiceModal)
 });
 
-closeBtn.addEventListener("click", toggleInvoiceModal);
+// closeBtn.addEventListener("click", toggleInvoiceModal);
 
 //FUNCTION
 function toggleInvoiceModal() {
@@ -87,8 +87,11 @@ blackAlpha.addEventListener("click", () => {
     deleteModal.classList.remove("show");
     addUserModal.classList.remove("show");
     editUserModal.classList.remove("show");
-    invoiceModal.classList.remove("show");
     blackAlpha.classList.remove("show");
+
+    if (closeBtn !== null) {
+        invoiceModal.classList.remove("show");
+    }
 });
 
 ////////////////////////////////////////////////////
@@ -105,4 +108,4 @@ viewBtns.forEach(element => {
 
 document.querySelector("#burger").addEventListener("click", () => {
     document.querySelector("#sidebarMenu").classList.toggle("show");
-})
+});
