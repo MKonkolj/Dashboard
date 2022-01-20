@@ -171,24 +171,20 @@ a {
 }
 
 .table-cell {
-    padding: 30px;
+    padding: clamp(0.9375rem, 0.35539215686274506rem + 2.450980392156863vw, 1.875rem);
     border: 1px solid var(--light-grey);
     white-space: nowrap;
 }
 
 .avatar-column {
     padding: 10px 30px 10px 30px;
-    width: 145px;
     text-align: center;
 }
 
 .avatar-column img {
     display: block;
     margin: 0 auto;
-}
-
-.options-column {
-    width: 178px;
+    width: clamp(3.125rem, 1.9607843137254901rem + 4.901960784313726vw, 5rem);
 }
 
 .options-container {
@@ -245,7 +241,7 @@ a {
     min-height: 200px;
     background: var(--white);
     text-align: center;
-    padding: 30px 30px;
+    padding: 30px 30px 35px 30px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -404,8 +400,9 @@ a {
         width: 100vw;
         padding: clamp(1.25rem, 0.42247386759581884rem + 3.484320557491289vw, 1.875rem);
     }
-    .btn-primary {
-        padding-inline: clamp(0.9375rem, -1.69921875rem + 8.7890625vw, 3.75rem);
+    .btn-primary,
+    .add-user-btn {
+        padding-inline: clamp(2rem, 0.9133986928104574rem + 4.575163398692811vw, 3.75rem);
         margin-right: clamp(1.25rem, -1.09375rem + 7.8125vw, 3.75rem);
     }
     .searchbar {
@@ -413,5 +410,8 @@ a {
     }
     .top-section::before {
         left: clamp(1.25rem, -1.09375rem + 7.8125vw, 3.75rem);
+    }
+    .searchbar:focus ~ .add-user-btn {
+        display: none;
     }
 }
