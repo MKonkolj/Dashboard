@@ -189,8 +189,6 @@ a {
     margin: 30px 60px 30px 10px;
 }
 
-
-
 /* TABLE */
 
 .table-div {
@@ -201,7 +199,8 @@ a {
 }
 
 .table {
-    width: max(100%, 1200px);
+    table-layout: auto;
+    width: 100%;
     border-collapse: collapse;
     border-style: hidden;
 }
