@@ -56,9 +56,13 @@ a {
 
 }
 
-.sidebar li:hover{
+.sidebar li.current {
     border-left: 5px solid var(--white);
     padding-left: 55px;
+}
+
+.sidebar li:hover{
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .sidebar li:active {
