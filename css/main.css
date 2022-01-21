@@ -514,7 +514,7 @@ a {
 }
 
 .time-modal-btns .btn-white {
-    margin-right: 0;
+    margin-inline: 40px 0;
 }
 
 /* MEDIA  ****************************/
@@ -569,6 +569,9 @@ a {
     .add-user-btn {
         padding-inline: clamp(2rem, 0.9133986928104574rem + 4.575163398692811vw, 3.75rem);
         margin-right: clamp(1.25rem, -1.09375rem + 7.8125vw, 3.75rem);
+    }
+    .time-modal-btns .btn-primary {
+        margin-right: 0px;
     }
     .searchbar {
         padding-left: calc(clamp(1.25rem, -1.09375rem + 7.8125vw, 3.75rem) + 30px);
