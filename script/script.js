@@ -19,6 +19,11 @@ const editBtns = document.querySelectorAll(".edit-option");
 const editUserCancel = document.querySelector("#editUserCancel");
 const editUserSave = document.querySelector("#editUserSave");
 const editUserModal = document.querySelector("#editUserModal");
+//TIME MODAL
+const timeBtns = document.querySelectorAll(".time-option");
+const timeModal = document.querySelector("#timeModal");
+const timeYes = document.querySelector ("#timeYes");
+const timeNo = document.querySelector ("#timeNo");
 
 /////////////////////////////////////////////////////////////////////
 
@@ -56,7 +61,7 @@ if (addUserBtn.length !== 0) {
 //////////////////////////////////////////////////////
 
 
-if (editBtn.length !== 0) {
+if (editBtns.length > 0) {
 //FUNCTION 
 function toggleEditUserModal() {
     editUserModal.classList.toggle("show");
@@ -89,6 +94,23 @@ function toggleInvoiceModal() {
 };
 
 ///////////////////////////////////////////////////////
+
+if (timeBtns.length > 0) {
+//EVENTS FOR TIME MODAL
+timeBtns.forEach(element => {
+    element.addEventListener("click", toggleTimeModal)
+})
+
+function toggleTimeModal() {
+    timeModal.classList.toggle("show");
+    blackAlpha.classList.toggle("show");
+}
+
+timeYes.addEventListener("click", toggleTimeModal);
+timeNo.addEventListener("click", toggleTimeModal);
+}
+
+///////////////////////////////////////////////////////
 //BLACK ALPHA TO CLOSE MODAL
 blackAlpha.addEventListener("click", () => {
     deleteModal.classList.remove("show");
@@ -98,6 +120,10 @@ blackAlpha.addEventListener("click", () => {
 
     if (closeBtn !== null) {
         invoiceModal.classList.remove("show");
+    }
+
+    if (timeBtns.length > 0) {
+        timeModal.classList.remove("show");
     }
 });
 

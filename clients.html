@@ -66,6 +66,34 @@
                             </thead>
                             <tbody>
                                 <tr>
+                                    <td class="table-cell avatar-column"><img src="./img/clients/it-convergance.png" alt="user avatar"></td>
+                                    <td class="table-cell name-column">IT Convergance</td>
+                                    <td class="table-cell options-column">
+                                        <div class="options-container">
+                                            <span class="time-option options-icon" id="timeBtn"></span>
+                                            <span class="edit-option options-icon" id="editBtn"></span>
+                                            <a><span class="view-option options-icon"></span></a>
+                                            <a><span class="view-dark-option options-icon"></span></a>
+                                            <span class="delete-option options-icon" id="deleteBtn"></span>
+                                            <span class="invoice-option options-icon"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="table-cell avatar-column"><img src="./img/clients/as-marketing.png" alt="user avatar"></td>
+                                    <td class="table-cell name-column">AS Marketing</td>
+                                    <td class="table-cell options-column">
+                                        <div class="options-container">
+                                            <span class="time-option options-icon" id="timeBtn"></span>
+                                            <span class="edit-option options-icon" id="editBtn"></span>
+                                            <a><span class="view-option options-icon"></span></a>
+                                            <a><span class="view-dark-option options-icon"></span></a>
+                                            <span class="delete-option options-icon" id="deleteBtn"></span>
+                                            <span class="invoice-option options-icon"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td class="table-cell avatar-column"><img src="./img/avatars/avatar-1.png" alt="user avatar"></td>
                                     <td class="table-cell name-column">Loreta</td>
                                     <td class="table-cell options-column">
@@ -292,6 +320,29 @@
                 </div>
             </div>
             <p>lorem@gmail.com</p>
+        </div>
+    </div>
+    <!-- TIME MODAL -->
+    <div class="time-modal" id="timeModal">
+        <p class="modal-subtitle">Enter time used for: Lorem Ipsum</p>
+        <form class="time-modal-container">
+            <div class="desc-time">
+                <label>Description:</label>
+                <textarea cols="30" rows="4" placeholder="Work description" ></textarea>
+                <label>Time spent:</label>
+                <div>
+                    <input class="time-modal-number" type="number" placeholder="00">
+                    <input class="time-modal-number" type="number" placeholder="00">
+                </div>
+            </div>
+            <div class="date-picker">
+                <p>Date:</p>
+                <img src="./img/date-picker.png" alt="">
+            </div>
+        </form>
+        <div class="time-modal-btns">
+            <a class="btn-primary" id="timeYes">Yes</a>
+            <a class="btn-primary btn-white" id="timeNo">No</a>
         </div>
     </div>
 <script src="./script/script.js"></script>

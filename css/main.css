@@ -1,10 +1,17 @@
+::placeholder {
+    color: var(--light-grey);
+    opacity: 1;
+    font-family: "Open Sans";
+    font-size: 0.875rem;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body, input {
+body, input, textarea, ::placeholder {
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 1rem;
@@ -115,10 +122,10 @@ a {
     color: var(--light-blue);
 }
 
-.searchbar::placeholder {
+/* .searchbar::placeholder {
     color: var(--light-grey);
     opacity: 1;
-}
+} */
 
 .searchbar:focus,
 .searchbar:focus-visible {
@@ -436,6 +443,80 @@ a {
     transform: rotate(45deg) translate(2px, 5px);
 }
 
+/* TIME MODAL */
+
+.time-modal {
+    display: none;
+    width: 800px;
+    min-height: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--white);
+    border-radius: 20px;
+    padding: 30px clamp(1.875rem, 0.7107843137254901rem + 4.901960784313726vw, 3.75rem);
+    text-align: center;
+}
+
+.time-modal.show {
+    display: block;
+}
+
+.time-modal-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 40px;
+}
+
+.desc-time {
+    justify-content: start;
+}
+
+.desc-time > *{
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.desc-time textarea {
+    resize: none;
+    margin-bottom: 20px;
+    border: 1px solid var(--light-grey);
+    border-radius: 4px;
+    padding: 5px 20px;
+}
+
+.date-picker {
+    text-align: left;
+    padding-left: 90px;
+}
+
+.date-picker img {
+    max-width: 150px;
+    display: block;
+    padding-top: 20px;
+}
+
+.time-modal-number {
+    display: inline;
+    width: 60px;
+    border: 1px solid var(--light-grey);
+    border-radius: 4px;
+    padding: 5px 5px 5px 10px;
+    font-size: 0.875rem;
+}
+
+.time-modal-btns {
+    margin-top: 40px;
+}
+
+.time-modal-btns .btn-white {
+    margin-right: 0;
+}
+
 /* MEDIA  ****************************/
 
 @media (max-width: 992px) {
@@ -494,5 +575,15 @@ a {
     }
     .top-section::before {
         left: clamp(1.25rem, -1.09375rem + 7.8125vw, 3.75rem);
+    }
+    .time-modal {
+        width: min(500px, 90%);
+    }
+    .time-modal-container {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+    .date-picker {
+        padding-left: 0;
     }
 }
