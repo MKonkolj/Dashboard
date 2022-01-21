@@ -20,36 +20,48 @@ const editUserCancel = document.querySelector("#editUserCancel");
 const editUserSave = document.querySelector("#editUserSave");
 const editUserModal = document.querySelector("#editUserModal");
 
-// EVENTS FOR DELETE MODAL
-deleteBtns.forEach(element => {
-    element.addEventListener("click", toggleDeleteModal);
-});
+/////////////////////////////////////////////////////////////////////
 
-deleteBtn.addEventListener("click", toggleDeleteModal);
-deleteYes.addEventListener("click", toggleDeleteModal);
-deleteNo.addEventListener("click", toggleDeleteModal);
-
-//FUNCTION 
-function toggleDeleteModal() {
+if (deleteBtns.length !== 0) {
+    //FUNCTION 
+    function toggleDeleteModal() {
     deleteModal.classList.toggle("show");
     blackAlpha.classList.toggle("show");
-};
+    };
 
+    //EVENTS FOR DELETE MODAL
+    deleteBtns.forEach(element => {
+        element.addEventListener("click", toggleDeleteModal);
+    });
+
+    deleteYes.addEventListener("click", toggleDeleteModal);
+    deleteNo.addEventListener("click", toggleDeleteModal);
+}
+
+/////////////////////////////////////////////////////////////////////
+
+if (addUserBtn.length !== 0) {
+    //FUNCTION
+    function toggleNewUserModal() {
+        addUserModal.classList.toggle("show");
+        blackAlpha.classList.toggle("show");
+    };
+
+    // EVENTS FOR ADD USER MODAL
+    addUserBtn.addEventListener("click", toggleNewUserModal);
+    addUserCancel.addEventListener("click", toggleNewUserModal);
+    addUserAdd.addEventListener("click", toggleNewUserModal);
+}
 
 //////////////////////////////////////////////////////
 
-// EVENTS FOR ADD USER MODAL
-addUserBtn.addEventListener("click", toggleNewUserModal);
-addUserCancel.addEventListener("click", toggleNewUserModal);
-addUserAdd.addEventListener("click", toggleNewUserModal);
 
-//FUNCTION
-function toggleNewUserModal() {
-    addUserModal.classList.toggle("show");
+if (editBtn.length !== 0) {
+//FUNCTION 
+function toggleEditUserModal() {
+    editUserModal.classList.toggle("show");
     blackAlpha.classList.toggle("show");
 };
-
-//////////////////////////////////////////////////////
 
 // EVENTS FOR EDIT USER MODAL
 editBtns.forEach(element => {
@@ -59,12 +71,7 @@ editBtns.forEach(element => {
 editBtn.addEventListener("click", toggleEditUserModal);
 editUserCancel.addEventListener("click", toggleEditUserModal);
 editUserSave.addEventListener("click", toggleEditUserModal);
-
-//FUNCTION 
-function toggleEditUserModal() {
-    editUserModal.classList.toggle("show");
-    blackAlpha.classList.toggle("show");
-};
+}
 
 //////////////////////////////////////////////////////
 
@@ -73,7 +80,7 @@ invoiceBtns.forEach(element => {
     element.addEventListener("click", toggleInvoiceModal)
 });
 
-// closeBtn.addEventListener("click", toggleInvoiceModal);
+ (closeBtn !== null) ? closeBtn.addEventListener("click", toggleInvoiceModal): false;
 
 //FUNCTION
 function toggleInvoiceModal() {
