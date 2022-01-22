@@ -16,6 +16,7 @@ const addUserCancel = document.querySelector("#addUserCancel");
 const addUserAdd = document.querySelector("#addUserAdd");
 //EDIT USER
 const editBtns = document.querySelectorAll(".edit-option");
+const editBtn = document.querySelector("#profileEditBtn");
 const editUserCancel = document.querySelector("#editUserCancel");
 const editUserSave = document.querySelector("#editUserSave");
 const editUserModal = document.querySelector("#editUserModal");
@@ -27,7 +28,7 @@ const timeNo = document.querySelector ("#timeNo");
 
 /////////////////////////////////////////////////////////////////////
 
-if (deleteBtns.length !== 0) {
+if (deleteBtns.length > 0) {
     //FUNCTION 
     function toggleDeleteModal() {
     deleteModal.classList.toggle("show");
@@ -45,7 +46,7 @@ if (deleteBtns.length !== 0) {
 
 /////////////////////////////////////////////////////////////////////
 
-if (addUserBtn.length !== 0) {
+if (addUserBtn !== null) {
     //FUNCTION
     function toggleNewUserModal() {
         addUserModal.classList.toggle("show");
@@ -73,9 +74,12 @@ editBtns.forEach(element => {
     element.addEventListener("click", toggleEditUserModal);
 });
 
-editBtn.addEventListener("click", toggleEditUserModal);
 editUserCancel.addEventListener("click", toggleEditUserModal);
 editUserSave.addEventListener("click", toggleEditUserModal);
+
+if (editBtn !== null) {
+    editBtn.addEventListener("click", toggleEditUserModal);
+}
 }
 
 //////////////////////////////////////////////////////
@@ -113,15 +117,21 @@ timeNo.addEventListener("click", toggleTimeModal);
 ///////////////////////////////////////////////////////
 //BLACK ALPHA TO CLOSE MODAL
 blackAlpha.addEventListener("click", () => {
-    deleteModal.classList.remove("show");
-    addUserModal.classList.remove("show");
-    editUserModal.classList.remove("show");
-    blackAlpha.classList.remove("show");
-
-    if (closeBtn !== null) {
+    if (deleteModal !== null) {
+        deleteModal.classList.remove("show");
+    }
+    if (addUserModal !== null) {
+        addUserModal.classList.remove("show");
+    }
+    if (editUserModal !== null) {
+        editUserModal.classList.remove("show");
+    }
+    if (blackAlpha !== null) {
+        blackAlpha.classList.remove("show");
+    }
+    if (invoiceModal !== null) {
         invoiceModal.classList.remove("show");
     }
-
     if (timeBtns.length > 0) {
         timeModal.classList.remove("show");
     }
@@ -138,7 +148,9 @@ viewBtns.forEach(element => {
 
 /////////////////////////////////////////////////////
 // SIDEBAR TOGGLE
+const burger = document.querySelector("#burger");
+const sidebarMenu = document.querySelector("#sidebarMenu");
 
-document.querySelector("#burger").addEventListener("click", () => {
-    document.querySelector("#sidebarMenu").classList.toggle("show");
+burger.addEventListener("click", () => {
+    sidebarMenu.classList.toggle("show");
 });

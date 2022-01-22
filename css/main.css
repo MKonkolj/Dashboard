@@ -581,6 +581,28 @@ a {
 .profile-table-cell {
     padding: 20px;
     border: 1px solid var(--white);
+    font-size: 0.875rem;
+    color: var(--dark-grey);
+}
+
+.profile-hours-option {
+    cursor: pointer;
+}
+
+.profile-hours-option:hover .dot{
+    background: var(--blue);
+}
+
+.hours-option {
+    display: grid;
+    grid-template-columns: 6px 6px 6px;
+    justify-content: center;
+}
+
+.dot {
+    width: 3px;
+    height: 3px;
+    background: var(--dark-grey);
 }
 
 /* MEDIA  ****************************/

@@ -28,372 +28,401 @@
         <title>Dashboard</title>
     </head>
 <body>
-    <div class="grid-2-1">
-        <!-- SIDEBAR -->
-        <div class="sidebar">
-            <img src="img/universal-logo.png" alt="universal logo">
-            <ul class="sidebar-menu">
-                <li><a href="./index.html">Users</a></li>
-                <li><a href="./developers.html">Developers</a></li>
-                <li><a href="./clients.html">Clients</a></li>
-                <li class="current"><a href="./my-profile.html">My profile</a></li>
-            </ul>
-        </div>
-        <div class="dashboard-container">
-            <div class="dashboard">
-                
-                <div class="profile-hours-container grid-2-1">
-                    <!-- PROFILE SIDE -->
-                    <div class="profile-container">
-                        <span class="edit-profile edit-option options-icon" id="editBtn"></span>
-                        <img class="profile-avatar" src="./img/avatars/avatar-6.png" alt="profile avatar">
-                        <p class="profile-title">Lorem Ipsum</p>
-                        <div class="profile-info">
-                            <p><strong>First Name: </strong><span>Lorem</span></p>
-                            <p><strong>Last Name: </strong><span>Ipsum</span></p>
-                            <p><strong>Email: </strong><span>loremipsum@mail.com</span></p>
-                            <p><strong>Role: </strong><span> Developer</span></p>
-                            <p><strong>Bank account: </strong><span> 55** **** **** **66</span></p>
-                            <p><strong>Status: </strong><span>&#128994; Active</span></p>
-                            <a class="insert-hours-btn btn-primary">Insert hours</a>
-                            <p><strong>This month: <span> 120:16:45</span></strong></p>
-                            <a class="log-out-btn btn-primary btn-white">Log out</a>
+    <main>
+        <div class="grid-2-1">
+            <!-- SIDEBAR -->
+            <div class="sidebar">
+                <img src="img/universal-logo.png" alt="universal logo">
+                <ul class="sidebar-menu" id="sidebarMenu">
+                    <li class="current"><a href="./index.html">Users</a></li>
+                    <li><a href="./developers.html">Developers</a></li>
+                    <li><a href="./clients.html">Clients</a></li>
+                    <li><a href="./my-profile.html">My profile</a></li>
+                </ul>
+                <div class="burger" id="burger">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+            </div>
+            <!-- DASHBOARD -->
+            <div class="dashboard-container">
+                <div class="dashboard">
+        
+                    <div class="profile-hours-container grid-2-1">
+                        <!-- PROFILE SIDE -->
+                        <div class="profile-container">
+                            <span class="edit-profile edit-option options-icon" id="profileEditBtn"></span>
+                            <img class="profile-avatar" src="./img/avatars/avatar-6.png" alt="profile avatar">
+                            <p class="profile-title">Lorem Ipsum</p>
+                            <div class="profile-info">
+                                <p><strong>First Name: </strong><span>Lorem</span></p>
+                                <p><strong>Last Name: </strong><span>Ipsum</span></p>
+                                <p><strong>Email: </strong><span>loremipsum@mail.com</span></p>
+                                <p><strong>Role: </strong><span> Developer</span></p>
+                                <p><strong>Bank account: </strong><span> 55** **** **** **66</span></p>
+                                <p><strong>Status: </strong><span>&#128994; Active</span></p>
+                                <a class="insert-hours-btn btn-primary">Insert hours</a>
+                                <p><strong>This month: <span> 120:16:45</span></strong></p>
+                                <a class="log-out-btn btn-primary btn-white">Log out</a>
+                            </div>
+                        </div>
+                        <!-- TABLE SIDE -->
+                        <div class="profile-table-container">
+                            <table class="table profile-table">
+                                <thead>
+                                    <tr>
+                                        <th>Client</th>
+                                        <th>Task</th>
+                                        <th>Month</th>
+                                        <th>Time</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem ispum very long client name</td>
+                                        <td class="profile-table-cell">Work on lorem ipsuming the pdf on the html channel</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Very very long lorem ipsum clients task in hand</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <div class="dot dot1"></div>
+                                                <div class="dot dot2"></div>
+                                                <div class="dot dot3"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">Lorem Ipsum</td>
+                                        <td class="profile-table-cell">12.11.2021.</td>
+                                        <td class="profile-table-cell">00:45:00</td>
+                                        <td class="profile-table-cell profile-hours-option">
+                                            <div class="hours-option">
+                                                <span class="dot dot1"></span>
+                                                <span class="dot dot2"></span>
+                                                <span class="dot dot3"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <!-- TABLE SIDE -->
-                    <div class="profile-table-container">
-                        <table class="table profile-table">
-                            <thead>
-                                <tr>
-                                    <th>Client</th>
-                                    <th>Task</th>
-                                    <th>Month</th>
-                                    <th>Time</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">Lorem Ipsum</td>
-                                    <td class="profile-table-cell">12.11.2021.</td>
-                                    <td class="profile-table-cell">00:45:00</td>
-                                    <td class="profile-table-cell">
-                                        <div class="hours-option">
-                                            <span class="dot dot1"></span>
-                                            <span class="dot dot2"></span>
-                                            <span class="dot dot3"></span>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
                 </div>
-
-
-
             </div>
         </div>
+    </main>
+    <!-- EDIT USER MODAL -->
+    <div class="black-alpha fixed-center" id="blackAlpha"></div>
+    <div class="edit-user-modal" id="editUserModal">
+        <form>
+            <p class="modal-title">New User</p>
+            <img class="edit-user-image" src="./img/avatars/avatar-6.png" alt="User image">
+            <input class="modal-right-input" type="text" value="Lorem">
+            <input class="modal-right-input" type="text" value="Ipsum">
+            <input class="modal-right-input" type="text" value="lremipsum@gmail.com">
+            <input class="modal-right-input" type="text" value="+38160123456">
+            <input class="modal-right-input" type="text" value="Matije Korvina 17">
+            <input class="modal-right-input" type="text" value="Subotica">
+            <input class="modal-right-input" type="text" value="24000">
+            <input class="modal-right-input" type="text" value="Vojvodina">
+            <input class="modal-right-input" type="text" value="***********">
+            <input class="modal-right-input" type="text" value="Designer">
+            <input class="modal-right-input" type="text" value="**** **** **** 5678">
+            <div class="edit-user-modal-btns">
+                <a class="btn-clear" href="#" id="editUserCancel">Cancel</a>
+                <a class="btn-primary" href="#" id="editUserSave">Save changes</a>
+            </div>
+        </form>
     </div>
+    <script src="./script/script.js"></script>
 </body>
 </html>
